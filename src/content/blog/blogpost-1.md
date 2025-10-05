@@ -1,6 +1,6 @@
 ---
 title: ¡Hola!
-pubDate: 5.10.25
+pubDate: 5.10.2025
 author: Marina Lopez
 tags:
   - ¡Si no puedes avanzar, solo rueda!
