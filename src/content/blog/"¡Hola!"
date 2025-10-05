@@ -8,7 +8,9 @@ tags:
 imgUrl: src/assets/peachfirma (2) (1).jpg' transition-duration: 0.5s' ; src/assets/rosafirma (1).jpg
 description: "Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:"
 layout: '../../layouts/BlogPost.astro'
-carrousel { src/assets/rosafirma (1).jpg
+carrousel:
+-src/assets/rosafirma (1).jpg
+-src/assets/rosafirma (1).jpg
 ---
 
 ## Transcripción
