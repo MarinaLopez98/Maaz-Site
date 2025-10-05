@@ -8,6 +8,10 @@ tags:
 imgUrl: 'src/assets/peachfirma (2) (1).jpg'
 description: "Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:"
 layout: '../../layouts/BlogPost.astro'
+.cardshadow { 
+transition-property	all
+transition-duration	0.5s
+transition-timing-function	ease-in-out
 ---
 
 ## Transcripción
