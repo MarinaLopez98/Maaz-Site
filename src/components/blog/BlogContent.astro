@@ -6,12 +6,10 @@ const { images } = Astro.props;
 <div class="image-hover-container">
     <img
         src="/src/assets/peachfirma (2) (1).jpg"
-        alt="Rolling Peaches"
         class="hover-image normal"
     />
     <img
         src="/src/assets/rosafirma (1).jpg"
-        alt="Rolling Peaches Hover"
         class="hover-image hover"
     />
 </div>
@@ -23,24 +21,29 @@ const { images } = Astro.props;
         margin: 0 auto;
         position: relative;
     }
-
+    
     .hover-image {
         width: 100%;
         height: auto;
         border-radius: 8px;
         transition: opacity 0.5s ease;
     }
-
+    
     .hover-image.hover {
         position: absolute;
         top: 0;
         left: 0;
         opacity: 0;
     }
-
+    
     .image-hover-container:hover .hover-image.normal {
         opacity: 0;
     }
+    
+    .image-hover-container:hover .hover-image.hover {
+        opacity: 1;
+    }
+</style>
 
     .image-hover-container:hover .hover-image.hover {
         opacity: 1;
