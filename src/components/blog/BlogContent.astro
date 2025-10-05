@@ -3,47 +3,22 @@ const { images } = Astro.props;
 ---
 
 <div class="image-hover-container">
-  <img 
-    src={images.normal} 
-    alt="Rolling Peaches" 
-    class="hover-image"
-    data-hover-src={images.hover}
-  />
+    <img
+        src={images.normal}
+        alt="Rolling Peaches"
+        class="hover-image"
+    />
 </div>
 
 <style>
-  .image-hover-container {
-    width: 100%;
-    max-width: 400px; /* Ajusta según el tamaño que necesites */
-    margin: 0 auto;
-  }
+    .image-hover-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
-  .hover-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: opacity 0.5s ease;
-    cursor: pointer;
-  }
-
-  .hover-image:hover {
-    content: url({images.hover});
-    opacity: 0.9;
-  }
+    .hover-image {
+        width: 100%;
+        height: auto;
+    }
 </style>
-interface Props {
-  content: any;
-}
-
-const { content } = Astro.props;
----
-
-<article class='prose-slate w-sm md:w-prose md:prose coinfant p-4 text-justify'>
-  <a href='/apparent-apogee' title='Back to home'>&larr; Back to home</a>
-  <!--p class='text-slate text-sm md:text-base'>
-    Published on {content.pubDate} by {content.author}
-  </p-->
-  <slot />
-  <!--p class='text-slate'>Written by {content.author}</p-->
-  <a href='/apparent-apogee' title='Back to blog'>&larr; Back to home</a>
-</article>
