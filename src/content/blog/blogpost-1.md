@@ -1,12 +1,12 @@
 ---
-title: Transcript
-pubDate: Segundo de Diciembre 2024
+title: ¡Hola!
+pubDate: 5.10.25
 author: Marina Lopez
 tags:
-  - Parque de las ciencias
-  - Transcripción
-imgUrl: '../../assets/Parquedelasciencias.jpg'
-description: Transcripción de la conversación con Luis Alacalá
+  - ¡Si no puedes avanzar, solo rueda!
+  - Esta de aquí se presenta...
+imgUrl: 'file:///C:/Users/marin/Downloads/peachfirma%20(2)%20(1).jpg'
+description: Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:
 layout: '../../layouts/BlogPost.astro'
 ---
 
