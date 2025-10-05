@@ -1,12 +1,14 @@
 ---
+// BlogContent.astro
 const { images } = Astro.props;
 ---
 
 <div class="image-hover-container">
     <img
-        src={images.normal}
+        src="/src/assets/peachfirma (2) (1).jpg"
         alt="Rolling Peaches"
         class="hover-image"
+        data-hover-src="/src/assets/rosafirma (1).jpg"
     />
 </div>
 
@@ -15,10 +17,26 @@ const { images } = Astro.props;
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-    }
 
     .hover-image {
         width: 100%;
         height: auto;
-    }
+        border-radius: 8px;
+        transition: opacity 0.5s ease;
+        cursor: pointer;
 </style>
+
+<script>
+    // JavaScript para el efecto hover
+    const image = document.querySelector('.hover-image');
+    const originalSrc = image.src;
+    const hoverSrc = image.getAttribute('data-hover-src');
+
+    image.addEventListener('mouseenter', () => {
+        image.src = hoverSrc;
+    });
+
+    image.addEventListener('mouseleave', () => {
+        image.src = originalSrc;
+    });
+</script>
