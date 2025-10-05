@@ -7,7 +7,7 @@ export default defineConfig({
   
 
   // used to generate images
-  site: 'https://maaz-selia.github.io',
+  site: 'https://marinalopez98.github.io',
   base: '/Maaz-Site',  // Changed to match your repository name
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
