@@ -6,8 +6,8 @@ tags:
   - "¡Si no puedes avanzar, solo rueda!"
   - "Esta de aquí se presenta..."
 images:
-  normal: '/src/assets/peachfirma (2) (1).jpg'
-  hover: '/src/assets/rosafirma (1).jpg'
+  normal: '/assets/peachfirma.jpg'
+  hover: '/src/assets/rosafirma.jpg'
 description: "Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:"
 layout: './../layouts/BlogPost.astro'
 ---
