@@ -1,13 +1,15 @@
 ---
-title: "¡Hola!"
+title: "¡Hola caracola!"
 pubDate: 5.10.2025
 author: Marina Lopez
 tags:
-  - ¡Si no puedes avanzar, solo rueda!
-  - Esta de aquí se presenta...
-imgUrl: 'src/assets/peachfirma (2) (1).jpg'
+  - "¡Si no puedes avanzar, solo rueda!"
+  - "Esta de aquí se presenta..."
+images:
+  normal: '/assets/peachfirma.jpg'
+  hover: '/assets/rosafirma.jpg'
 description: "Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:"
-layout: '../../layouts/BlogPost.astro'
+layout: './../layouts/BlogPost.astro'
 ---
 
 ## Transcripción
