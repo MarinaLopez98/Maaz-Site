@@ -1,4 +1,36 @@
 ---
+const { images } = Astro.props;
+---
+
+<div class="image-hover-container">
+  <img 
+    src={images.normal} 
+    alt="Rolling Peaches" 
+    class="hover-image"
+    data-hover-src={images.hover}
+  />
+</div>
+
+<style>
+  .image-hover-container {
+    width: 100%;
+    max-width: 400px; /* Ajusta según el tamaño que necesites */
+    margin: 0 auto;
+  }
+
+  .hover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+  }
+
+  .hover-image:hover {
+    content: url({images.hover});
+    opacity: 0.9;
+  }
+</style>
 interface Props {
   content: any;
 }
