@@ -1,12 +1,12 @@
 ---
-title: ¡Hola!
+title: "¡Hola!"
 pubDate: 5.10.2025
 author: Marina Lopez
 tags:
   - ¡Si no puedes avanzar, solo rueda!
   - Esta de aquí se presenta...
-imgUrl: 'file:///C:/Users/marin/Downloads/peachfirma%20(2)%20(1).jpg'
-description: Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:
+imgUrl: 'src/assets/peachfirma (2) (1).jpg'
+description: "Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:"
 layout: '../../layouts/BlogPost.astro'
 ---
 
