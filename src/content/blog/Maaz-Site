@@ -1,13 +1,12 @@
 ---
----
-title: ¡Hola Caracola!
+title: '¡Hola Caracola!'
 pubDate: 6.10.2025
-author: A rolling Peach
+author: 'A rolling Peach'
 tags:
-  - All you need is roll
-  - Transcripción
+  - 'All you need is roll'
+  - '¡Pincha, pincha aquí!'
 imgUrl: 'src/assets/peachfirma.jpg'
-description: Transcripción de la conversación con Luis Alacalá
+description: Blog para desahogarme cuando los tiempos sean difíciles c: Mantiene el dueño que montó todo el trabajo: Maaz-Selia
 layout: '../../layouts/BlogPost.astro'
 ---
 ## Introducción
