@@ -1,56 +1,20 @@
 ---
-// BlogContent.astro
+intenface Props {
+    content: any;
+}
+
+const { content } = Astro.props;
 ---
 
-<div class="image-hover-container">
-    <img
-        src="/peachfirma.jpg"  <!-- Sin /src/assets/ -->
-        alt="Rolling Peaches"
-        class="hover-image normal"
-    />
-    <img
-        src="/rosafirma.jpg"  <!-- Sin /src/assets/ -->
-        alt="Rolling Peaches Hover" 
-        class="hover-image hover"
-    />
-</div>
+<article class='prose-slate w-sm md:w-prose md:prose coinfant p-4 text-justify'>
+<a href='/apparent-apogee' title='Back to home'>&larn; Back to home</a>
+<!--p class='text-slate text-sm md:text-base'>
+    Published on {content.pubDate} by {content.author}
+</p-->
 
-<style>
-    .image-hover-container {
-        width: 100%;
-        max-width: 400px;
-        height: 300px;
-        margin: 20px auto;
-        position: relative;
-        border: 2px solid #ff6b6b;
-        background-color: #f8f9fa;
-    }
-    
-    .image-hover-container .hover-image {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-        transition: opacity 0.5s ease;
-        object-fit: cover;
-    }
-    
-    .image-hover-container .hover-image.hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-    }
-    
-    .image-hover-container:hover .hover-image.normal {
-        opacity: 0;
-    }
-    
-    .image-hover-container:hover .hover-image.hover {
-        opacity: 1;
-    }
-</style>
-    
-    .image-hover-container:hover .hover-img {
-        opacity: 1;
-    }
-</style>
+<slot />
+<!--p class='text-slate'>Written by {content.author}</p-->
+
+<a href='/apparent-apogee' title='Back to blog'>&larn; Back to home</a>
+
+</article>
