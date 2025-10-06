@@ -2,44 +2,56 @@
 // BlogContent.astro
 ---
 
-<div class="image-hover-container">
-    <img
-        src="/src/assets/peachfirma.jpg"
-        class="hover-image normal"
-    />
-    <img
-        src="/src/assets/rosafirma.jpg"
-        class="hover-image hover"
-    />
+<div class="hover-wrapper">
+    <div class="image-hover-container">
+        <img
+            src="/src/assets/peachfirma.jpg"
+            alt="Rolling Peaches"
+            class="normal-img"
+        />
+        <img
+            src="/src/assets/rosafirma.jpg"
+            alt="Rolling Peaches Hover"
+            class="hover-img"
+        />
+    </div>
 </div>
 
 <style>
+    .hover-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
     .image-hover-container {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
         position: relative;
-    }
-    
-    .hover-image {
-        width: 100%;
-        height: auto;
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
         border-radius: 8px;
-        transition: opacity 0.5s ease;
     }
     
-    .hover-image.hover {
+    .normal-img, .hover-img {
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+    }
+    
+    .hover-img {
         opacity: 0;
     }
     
-    .image-hover-container:hover .hover-image.normal {
+    .image-hover-container:hover .normal-img {
         opacity: 0;
     }
     
-    .image-hover-container:hover .hover-image.hover {
+    .image-hover-container:hover .hover-img {
         opacity: 1;
     }
 </style>
