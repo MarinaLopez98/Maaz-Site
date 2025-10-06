@@ -1,15 +1,14 @@
 ---
 // BlogContent.astro
-const { images } = Astro.props;
 ---
 
 <div class="image-hover-container">
     <img
-        src="/src/assets/peachfirma (2) (1).jpg"
+        src="/src/assets/peachfirma.jpg"
         class="hover-image normal"
     />
     <img
-        src="/src/assets/rosafirma (1).jpg"
+        src="/src/assets/rosafirma.jpg"
         class="hover-image hover"
     />
 </div>
@@ -40,11 +39,6 @@ const { images } = Astro.props;
         opacity: 0;
     }
     
-    .image-hover-container:hover .hover-image.hover {
-        opacity: 1;
-    }
-</style>
-
     .image-hover-container:hover .hover-image.hover {
         opacity: 1;
     }
