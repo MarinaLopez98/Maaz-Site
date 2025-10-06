@@ -2,54 +2,53 @@
 // BlogContent.astro
 ---
 
-<div class="hover-wrapper">
-    <div class="image-hover-container">
-        <img
-            src="/src/assets/peachfirma.jpg"
-            alt="Rolling Peaches"
-            class="normal-img"
-        />
-        <img
-            src="/src/assets/rosafirma.jpg"
-            alt="Rolling Peaches Hover"
-            class="hover-img"
-        />
-    </div>
+<div class="image-hover-container">
+    <img
+        src="/peachfirma.jpg"  <!-- Sin /src/assets/ -->
+        alt="Rolling Peaches"
+        class="hover-image normal"
+    />
+    <img
+        src="/rosafirma.jpg"  <!-- Sin /src/assets/ -->
+        alt="Rolling Peaches Hover" 
+        class="hover-image hover"
+    />
 </div>
 
 <style>
-    .hover-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-    
     .image-hover-container {
-        position: relative;
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         height: 300px;
-        overflow: hidden;
-        border-radius: 8px;
+        margin: 20px auto;
+        position: relative;
+        border: 2px solid #ff6b6b;
+        background-color: #f8f9fa;
     }
     
-    .normal-img, .hover-img {
+    .image-hover-container .hover-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        transition: opacity 0.5s ease;
+        object-fit: cover;
+    }
+    
+    .image-hover-container .hover-image.hover {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: opacity 0.5s ease;
-    }
-    
-    .hover-img {
         opacity: 0;
     }
     
-    .image-hover-container:hover .normal-img {
+    .image-hover-container:hover .hover-image.normal {
         opacity: 0;
     }
+    
+    .image-hover-container:hover .hover-image.hover {
+        opacity: 1;
+    }
+</style>
     
     .image-hover-container:hover .hover-img {
         opacity: 1;
