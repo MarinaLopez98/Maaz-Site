@@ -1,12 +1,14 @@
 ---
-title: "¡Hola Caracola!"
-pubDate: 6.10.2025
-author: "A rolling Peach"
+title: "¡Hola caracola!"
+pubDate: 5.10.2025
+author: Rolling Peaches
 tags:
-  - "All you need is roll"
-  - "¡Pincha, pincha aquí!"
-imgUrl: 'src/assets/peachfirma.jpg'
-description: "Blog para desahogarme cuando los tiempos sean difíciles c: Mantiene el dueño que montó todo el trabajo: Maaz-Selia"
+  - "¡Si no puedes avanzar, solo rueda!"
+  - "Esta de aquí se presenta..."
+images:
+  normal: '/assets/peachfirma.jpg'
+  hover: '/assets/rosafirma.jpg'
+description: "Diario de un ventilador. A veces será español, otras inglés... ¡Quién sabe! c:"
 layout: './../layouts/BlogPost.astro'
 ---
 
