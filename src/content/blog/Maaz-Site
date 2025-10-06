@@ -1,17 +1,21 @@
 ---
-title:            '¡Hola Caracola!'
-pubDate:           6.10.2025
-author:           'A rolling Peach'
+title: "¡Hola Caracola!"
+pubDate: 6.10.2025
+author: "A rolling Peach"
 tags:
-  -               'All you need is roll'
-  -               '¡Pincha, pincha aquí!'
-imgUrl:           'src/assets/peachfirma.jpg'
-description:       Blog para desahogarme cuando los tiempos sean difíciles c: Mantiene el dueño que montó todo el trabajo: Maaz-Selia
-layout:           '../../layouts/BlogPost.astro'
+  - "All you need is roll"
+  - "¡Pincha, pincha aquí!"
+imgUrl: 'src/assets/peachfirma.jpg'
+description: "Blog para desahogarme cuando los tiempos sean difíciles c: Mantiene el dueño que montó todo el trabajo: Maaz-Selia"
+layout: './../layouts/BlogPost.astro'
 ---
+
 ## Introducción
 
 &emsp;&emsp;&emsp;&emsp;Blog para desahogarme cuando los tiempos sean difíciles c: Mantiene el dueño que montó todo el trabajo: Maaz-Selia
+
 &emsp;&emsp;&emsp;&emsp;Hoy es mi primer día intentándolo y, la verdad, es muy duro, y eso que la mayoría de los contenidos están ya en algún sitio... ¡Maaz, eres el mejor!
+
 &emsp;&emsp;&emsp;&emsp;Las imágenes son de mi querida Matcha, que hace unas ilustraciones preciosas... Todo el contenido artístico es, sin duda, de ella.
-&emsp;&emsp;&emsp;&emsp;Alguien podría preguntarse, entonces en qué colaboro yo... ¡Bueno, pues no lo sé muy bien! Escribir y quejarme supongo >< 
+
+&emsp;&emsp;&emsp;&emsp;Alguien podría preguntarse, entonces en qué colaboro yo... ¡Bueno, pues no lo sé muy bien! Escribir y quejarme supongo
